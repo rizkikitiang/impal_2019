@@ -56,40 +56,38 @@ INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak)
 VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Ibraihan, passibraihan, Keuangan, Bandung, 0822XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Rizkitrio, passrizkitrio, Kasir, Jakarta, 0823XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Ibra, passibra, Kasir, Zimbabwe, 0813XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Ronaldo, passronaldo, Direktur, Portugal, 0880XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Jones, passjones, Supervisor, Jamaika, 0832XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Rizkianoronaldo, passrizkianoronaldo, Supervisor, Norwegia, 0818XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Wan Ujang, passwanujang, OB, Mesir, 0819XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Mang Jajang, passmangjajang, Asisten Manager, Selandia Baru, 0832XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Ken Dedes, passkendedes, Kasir, Jamaika Utara, 0892XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Mpu Tantular, passtantular, Kasir, Majapahit, 0816XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Romi Rafael, passromi, Kasir, Meksiko, 0892XXX);
 
 INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+VALUES (Dedi Dores, passdedi, Gudang, Bengkulu, 0872XXX);
 
-INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
-VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
