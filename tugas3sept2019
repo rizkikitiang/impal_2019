@@ -1,53 +1,95 @@
 CREATE TABLE Pegawai (
-  idPegawai varchar2(20),
-  nama varchar2(20),
-  password varchar2(12),
-  jabatan varchar2(20),
-  alamat varchar2(20),
-  noKontak number(12),
+  idPegawai varchar2(20) NOT NULL,
+  nama varchar2(20) NOT NULL,
+  password varchar2(12) NOT NULL,
+  jabatan varchar2(20) NOT NULL,
+  alamat varchar2(20) NOT NULL,
+  noKontak number(12) NOT NULL,
   PRIMARY KEY (idPEgawai)
 );
 
 CREATE TABLE Barang (
-  idBarang varchar2(20),
-  namaBarang varchar(20),
-  banyakBarang number(38),
-  hargaBarang number(38),
+  idBarang varchar2(20) NOT NULL,
+  namaBarang varchar(20) NOT NULL,
+  banyakBarang number(38) NOT NULL,
+  hargaBarang number(38) NOT NULL,
   PRIMARY KEY (idBarang)
 );
   
 CREATE TABLE Menjual (
-  idTransaksi varchar2(20),
-  tanggalTransaksi date,
-  idPegawai varchar2(20),
-  idBarang varchar2(20),
+  idTransaksi varchar2(20) NOT NULL,
+  tanggalTransaksi date NOT NULL,
+  idPegawai varchar2(20) NOT NULL,
+  idBarang varchar2(20) NOT NULL,
   PRIMARY KEY (idTransaksi),
   FOREIGN KEY (idPegawai) REFERENCES Pegawai(idPegawai),
   FOREIGN KEY (idBarang) REFERENCES Barang(idBarang)
 );
     
 CREATE TABLE Keuangan(
-  noLaporan number(12),
-  tanggalLaporan date,
-  pemasukan number(38),
-  pengeluaran number(38),
+  noLaporan number(12) NOT NULL,
+  tanggalLaporan date NOT NULL,
+  pemasukan number(38) NOT NULL,
+  pengeluaran number(38) NOT NULL,
   PRIMARY KEY (noLaporan)
 );
 
 CREATE TABLE Membuat (
-  idPegawai varchar2(20),
-  noLaporan varchar2(20)
+  idPegawai varchar2(20) NOT NULL,
+  noLaporan varchar2(20) NOT NULL,
   FOREIGN KEY (idPegawai) REFERENCES Pegawai(idPegawai),
   FOREIGN KEY (noLaporan) REFERENCES Keuangan(noLaporan)
 );
 
 CREATE TABLE Tagihan (
-  noTagihan number(20),
-  tglTagihan date,
-  jumlahTagihan number(38),
-  idBarang varchar2(20),
-  noLaporan number(12),
+  noTagihan number(20) NOT NULL,
+  tglTagihan date NOT NULL,
+  jumlahTagihan number(38) NOT NULL,
+  idBarang varchar2(20) NOT NULL,
+  noLaporan number(12) NOT NULL,
   PRIMARY KEY (noTagihan),
   FOREIGN KEY (idBarang) REFERENCES Barang(idBarang),
   FOREIGN KEY (noLaporan) REFERENCES Keuangan(noLaporan)
 );
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
+
+INSERT INTO Pegawai (nama, password, jabatan, alamat, noKontak) 
+VALUES (Rizki, passrizki, Manager, Harau, 0812XXX);
