@@ -1,0 +1,53 @@
+CREATE TABLE Pegawai (
+  idPegawai varchar2(20),
+  nama varchar2(20),
+  password varchar2(12),
+  jabatan varchar2(20),
+  alamat varchar2(20),
+  noKontak number(12),
+  PRIMARY KEY (idPEgawai)
+);
+
+CREATE TABLE Barang (
+  idBarang varchar2(20),
+  namaBarang varchar(20),
+  banyakBarang number(38),
+  hargaBarang number(38),
+  PRIMARY KEY (idBarang)
+);
+  
+CREATE TABLE Menjual (
+  idTransaksi varchar2(20),
+  tanggalTransaksi date,
+  idPegawai varchar2(20),
+  idBarang varchar2(20),
+  PRIMARY KEY (idTransaksi),
+  FOREIGN KEY (idPegawai) REFERENCES Pegawai(idPegawai),
+  FOREIGN KEY (idBarang) REFERENCES Barang(idBarang)
+);
+    
+CREATE TABLE Keuangan(
+  noLaporan number(12),
+  tanggalLaporan date,
+  pemasukan number(38),
+  pengeluaran number(38),
+  PRIMARY KEY (noLaporan)
+);
+
+CREATE TABLE Membuat (
+  idPegawai varchar2(20),
+  noLaporan varchar2(20)
+  FOREIGN KEY (idPegawai) REFERENCES Pegawai(idPegawai),
+  FOREIGN KEY (noLaporan) REFERENCES Keuangan(noLaporan)
+);
+
+CREATE TABLE Tagihan (
+  noTagihan number(20),
+  tglTagihan date,
+  jumlahTagihan number(38),
+  idBarang varchar2(20),
+  noLaporan number(12),
+  PRIMARY KEY (noTagihan),
+  FOREIGN KEY (idBarang) REFERENCES Barang(idBarang),
+  FOREIGN KEY (noLaporan) REFERENCES Keuangan(noLaporan)
+);
